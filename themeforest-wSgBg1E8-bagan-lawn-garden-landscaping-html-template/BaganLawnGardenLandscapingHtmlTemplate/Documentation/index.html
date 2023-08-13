@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Gerdenic HTML Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" type="image/png" href="favicon.ico">
+	<!-- Le styles -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<style type="text/css">
+
+		body{
+			padding-bottom:40px;
+		}
+		a {color: #6A1B9A;}
+
+		header{
+			background-color: #eee;
+			border-top: 10px solid #6A1B9A;
+			padding: 140px 0;
+			margin-bottom: 30px;
+		}
+
+		header h1{
+			color: #6A1B9A;
+			text-align: center;
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+		.span9 h2 a{font-size: 16px}
+
+		header p{
+			text-align: center;
+		}
+
+		.nav{
+			width: 250px;
+			overflow-x: auto;
+			height: 500px;
+		}
+
+		.nav li a {
+			text-transform: capitalize;
+		}
+
+		.affix{
+			top: 40px;
+		}
+
+		.affix-top{
+			top: 200px;
+		}
+
+		hr{
+			border: 1px solid #ccc;
+			margin-bottom: 50px;
+		}
+
+		.icons{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.icons li{
+			float: left;
+			width: 25%;
+		}
+
+		.social-icons{
+			background-color: #3f3f3f;
+		}
+
+		.social-icons ul{
+			list-style: none;
+			margin: 0;
+			padding: 10px;
+		}
+
+		.social-icons li{
+			float: left;
+			width: 25%;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+		.show-grid {
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		.show-grid [class*="span"] {
+			background-color: #eee;
+			text-align: center;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			min-height: 40px;
+			line-height: 40px;
+		}
+		.show-grid [class*="span"]:hover {
+			background-color: #ddd;
+		}
+		.show-grid .show-grid {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.show-grid .show-grid [class*="span"] {
+			margin-top: 5px;
+		}
+		.show-grid [class*="span"] [class*="span"] {
+			background-color: #ccc;
+		}
+		.show-grid [class*="span"] [class*="span"] [class*="span"] {
+			background-color: #999;
+		}
+
+
+
+	</style>
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="font/css/font-awesome.min.css">
+	<!--[if IE 7]><link rel="stylesheet" href="font/css/font-awesome-ie7.min.css"><![endif]-->
+
+
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shCore.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter_3.0.83/scripts/shBrushPhp.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="js/syntaxhighlighter_3.0.83/styles/shCoreDefault.css" />
+	<link type="text/css" rel="stylesheet" href="js/syntaxhighlighter_3.0.83/styles/shThemeRDark.css" />
+
+	<style>
+		.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+			color: #4CAF50 !important;
+		}
+	</style>
+
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+
+</head>
+
+<body>
+
+	<header id="toc">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<h1>"Gardenic HTML Template"</h1>
+					<p>Thank you for purchasing my Template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/xpeedstudio">here</a>. Thanks so much!</p>
+					<p><strong>Created: 8/06/2018 | By: XpeedStudio | Support Desk <a href="https://support.xpeedstudio.com/">https://support.xpeedstudio.com/</a></strong></p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="200">
+					<li><a href="#html_structure"><i class="icon-angle-right"></i> HTML Structure</a></li>
+					<li><a href="#css_structure"><i class="icon-angle-right"></i> CSS Structure</a></li>
+
+					<li><a href="#color-styles"><i class="icon-angle-right"></i> Color Styles (Variations)</a></li>
+					<li><a href="#header-logo"><i class="icon-angle-right"></i> Brand / Logo</a></li>
+					<li><a href="#nav-links"><i class="icon-angle-right"></i> Navigation</a></li>
+					<li><a href="#section_heading"><i class="icon-angle-right"></i> Section heading</a></li>
+					<li><a href="#pricing_table"><i class="icon-angle-right"></i> Pricing table</a></li>
+					<li><a href="#video_section"><i class="icon-angle-right"></i> video section</a></li>
+					<li><a href="#service_post"><i class="icon-angle-right"></i> Service</a></li>
+					<li><a href="#blog_post"><i class="icon-angle-right"></i> Blog post</a></li>
+					<li><a href="#counter_up"><i class="icon-angle-right"></i> Funfact</a></li>
+					<li><a href="#team"><i class="icon-angle-right"></i> Team</a></li>
+					<li><a href="#portfolio_and_case"><i class="icon-angle-right"></i> Recent Work</a></li>
+					<li><a href="#portfolio_masonry"><i class="icon-angle-right"></i> Our Project Masonry</a></li>
+					<li><a href="#contact"><i class="icon-angle-right"></i> Contact</a></li>
+					<li><a href="#contact_init"><i class="icon-angle-right"></i> Contact Init</a></li>
+					<li><a href="#phone_number_init"><i class="icon-angle-right"></i> Phone Number</a></li>
+
+					<li><a href="#javascript"><i class="icon-angle-right"></i> JavaScript</a></li>
+					<li><a href="#psd-file"><i class="icon-angle-right"></i> PSD File</a></li>
+					<li><a href="#credits"><i class="icon-angle-right"></i> Credits</a></li>
+				</ul>
+			</div>
+			<div class="span9">
+
+				<div class="row" id="html_structure">
+					<div class="span9">
+						<h2><strong>HTML Structure</strong> - <a href="#top">top</a></h2>
+						<p>Gardenic HTML Template is built with the Bootstrap 4 framework - that means you have access to all the great features, css &amp; js goodies has to offer. Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases.</p>
+						<p>To learn more about Bootstrap's grid system, please refer to <a href="https://getbootstrap.com/docs/4.1/layout/grid/">Bootstrap 4 Grid</a></p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="css_structure">
+					<div class="span9">
+						<h2><strong>CSS Structure</strong> - <a href="#top">top</a></h2>
+						<p>I'm using one main CSS file <strong>(assets/css/style.css)</strong> and sass file available on <strong>(assets/sass/style.scss)</strong>, in this template which you are free to modify depending on the customization you require. There are also other additional style sheets that I do not recommend changing. Those style sheets reside in the 'css' folder and 'sass' file on 'sass' folder.</p>
+						<ul>
+							<li><strong>https://fonts.google.com/</strong> - Web font Cabin from Google Fonts</li>
+							<li><strong>bootstrap.min.css</strong> - This is a main stylesheet that required for basic template styling like form, input, div, list element and etc.</li>
+							<li><strong>font-awesome.min.css</strong> - Web font containing all the icons from the Bootstrap framework and more.</li>
+							<li><strong>style.css</strong> - The main stylesheet you are encouraged to modify.</li>
+						</ul>
+						<p></p>
+						<p>The Style CSS file contains all of the specific stylings for the page. The file is separated into sections using:</p>
+						<pre class="brush: css">
+							/*****************
+
+							Table Of Content
+							------------------------------------
+
+							inharitance css
+							header top
+							header middle
+							header nav
+							home banner slider
+							promo area section
+							about us section
+							service section
+							recent work section
+							why choose us section
+							funfact section
+							pricing plan section
+							testmonial section
+							latest news section
+							call to action section
+							map section
+							footer section
+							video section
+							faq-and-client-logo
+							tips and tricks section
+							team section
+
+							----------------- inner page ----------
+
+							service inner section
+							breadcump
+							about innner
+							company timeline
+							blog section
+							ready-to-contact section
+							single blog 
+							faq content
+							contact sec
+							contact infomation
+							404 page
+
+							=====================================================**************************/
+						</pre>
+						<p>If you would like to edit a specific section of the site, simply find the appropriate label in the css or sass file, and then scroll down until you find the appropriate style that needs to be edited.</p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="color-styles">
+					<div class="span9">
+						<h2><strong>Color Styles (Variations)</strong> - <a href="#top">top</a></h2>
+						<p>This theme comes with Unlimited color variations. To change the color style from the theme edit the following lines:</p>
+						<pre class="brush: css">
+					
+						...
+
+						// primary  color list
+							$primary-color: #008435; // aqua
+							$primary-dark: #004b1e; // aqua
+						// secondary color list
+							$yallow-greeen: #489f10;
+							$yallow-greeen-dark: #3a7d0e;
+						// tilte color
+							$title-color: #282828;
+
+						// section bg color 
+							$section-bg: #f8fafe;
+							$section-bg-v2: #f4f4f4;
+						
+
+						</pre>
+							<p>Just change the color code name for example form <code>$color-primary: #008435;</code> to <code>#004b1e</code>.
+							Available <code>assets/sass/style.scss</code> directory</p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="header-logo">
+					<div class="span9">
+						<h2><strong>Brand / Logo</strong> - <a href="#top">top</a></h2>
+						<p>To change the logo edit the following lines:</p>
+						<pre class="brush: xml">
+						...
+
+						<!-- Logo start -->
+						<div class="logo">
+							<a href="./index.html">
+								<img src="assets/images/logo.png" alt="">
+							</a>
+						</div>
+						<!-- Logo end -->
+						<!-- mobile menu logo -->
+						<div class="nav-header">
+							<a href="./index.html" class="mobile-logo">
+								<img src="assets/images/logo-white.png" alt="">
+							</a>							
+						</div>
+						<!-- end mobile menu logo -->
+						...
+
+						<!-- Footer logo -->
+						<div class="footer-logo">
+							<a href="./index.html"><img src="assets/images/logo.png" alt=""> </a>
+						</div>
+						<!-- footer logo end -->
+
+						</pre>
+						<p>The value is the header logo image path from the <code>assets/images/logo.png</code></p>
+						<p>The value is the footer logo image path from the <code>assets/images/footer-logo.png</code></p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="nav-links">
+					<div class="span9">
+						<h2><strong>Navigation</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a navigation item edit the following lines:</p>
+						<h2>After editing the navigation bar:</h2>
+						<pre class="brush: xml">
+							...
+							<!-- nav linnks start -->
+							<nav id="navigation1" class="navigation header-nav clearfix">
+
+								<div class="nav-header">
+									<!--  <a class="nav-brand" href="#"></a>-->
+									<a href="./index.html" class="mobile-logo">
+										<img src="assets/images/logo-white.png" alt="">
+									</a>
+									<div class="nav-toggle"></div>
+								</div>
+			
+								<div class="nav-menus-wrapper clearfix">
+									<ul class="nav-menu">
+										<li class="active"><a href="#">Home</a>
+										<ul class="nav-dropdown">
+												<li><a href="index.html">Home One</a></li>
+												<li><a href="index-v2.html">Home Two</a></li>
+												<li><a href="index-v3.html">Home Three</a></li>
+												<li><a href="index-v4.html">Home Four</a></li>
+												<li><a href="index-v5.html">Home Five</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#">Pages</a>
+											<ul class="nav-dropdown">
+												<li><a href="pricing.html">pricing Plan</a></li>
+												<li><a href="gallery.html">Portfolio</a></li>
+												<li><a href="faq.html">FAQ</a></li>
+												<li><a href="testimonial.html">testimonial</a></li>
+												<li><a href="team.html">Team</a></li>
+												<li><a href="404.html">404</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Services</a>
+											<ul class="nav-dropdown">
+												<li>
+													<a href="service-v1.html">service one</a>
+													<ul class="nav-dropdown">
+														<li><a href="single-service-v1.html">single service one</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="service-v2.html">service two</a>
+													<ul class="nav-dropdown">
+														<li><a href="single-service-v2.html">single service two</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><a href="#">Features</a></li>
+										<li><a href="blog.html">Blog</a>
+											<ul class="nav-dropdown">
+												<li>
+													<a href="blog-single.html">blog single</a>
+												</li>
+											</ul>
+										</li>
+										<li><a href="about.html">About us</a></li>
+										<li>
+											<a href="">Contact</a>
+											<ul class="nav-dropdown">
+												<li>
+													<a href="contact.html">Contact One</a>
+												</li>
+												<li>
+													<a href="contact-v2.html">Contact Two</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<div class="header-nav-right-info align-to-right">
+										<label><i class="icon icon-phone3"></i> 000 2672 561</label>
+									</div>
+									
+								</div>
+			
+							</nav>		
+							<!-- .xs-menus -->
+						</pre>
+						<p>The link "href" is the page link from the element for the "goes to" action.</p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="section_heading">
+					<div class="span9">
+						<h2><strong>Section heading</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a team edit the following lines:</p>
+						<pre class="brush: xml">
+							...
+							<!-- section heading -->
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="section-title-item">
+										<h4 class="xs-title">Service we provide</h4>
+										<h2 class="section-title">Our Services</h2>
+									</div>
+								</div>
+							</div>					
+							<!-- section heading end -->
+							...
+							<!-- section heading v2 -->
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="section-title-item section-title-v2-item">
+										<h3 class="hidden-title">About Us</h3>
+										<h4 class="xs-title">About Us</h4>
+										<h2 class="section-title"><em>Who</em> we are?</h2>
+									</div>
+								</div>
+							</div>					
+							<!-- section heading v2 end -->
+				
+						</pre>
+						<hr>
+					</div>
+				</div>
+
+				<div class="row" id="pricing_table">
+					<div class="span9">
+						<h2><strong>Pricing plan table</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a pricing table edit the following lines:</p>
+						<pre class="brush: xml">
+							...
+							<div class="col-md-4 single-pricing-item wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
+								<div class="single-pricing-plan">
+									<i class="icon-pricing_1"></i>
+									<h4>Basic</h4>
+									<div class="pricing-bar"></div>
+									<h3><strong>$</strong>150<span>/m</span></h3>
+									<p>Digging service</p>
+									<p> Planting service</p>
+									<p> Watering service </p>
+									<a href="#" class="xs-btn sm-btn">Sign Up</a>
+								</div>
+							</div>
+						</pre>
+					</div>
+				</div>
+
+				<div class="row" id="video_section">
+					<div class="span9">
+						<h2><strong>About video section</strong> - <a href="#top">top</a></h2>
+						<p>To add or change video content edit the following lines:</p>
+						<pre class="brush: xml">
+						...
+						<!-- about video start -->
+			
+								<a href="https://www.youtube.com/watch?v=cvFpWtl1B-4" class="xs-video"><i class="fa fa-play"></i></a>
+							
+						<!-- about Video end -->
+
+						</pre>
+						<p>you add your custom video just following instructions: got to <code>https://www.youtube.com/</code> <strong>copy video url</strong> and <strong>paste</strong> it</p>
+						<hr />
+					</div>
+				</div>
+
+
+				<div class="row" id="service_post">
+					<div class="span9">
+						<h2><strong>Service</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a service post content edit the following lines:</p>
+						<pre class="brush: xml">
+					...
+
+						<!-- single service start -->
+						<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="300ms">
+							<div class="single-service">
+								<div class="service-img">
+									<img src="assets/images/services/1.jpg" alt="">
+									<i class="icon-Our_service_1"></i>
+								</div>
+								<h3 class="xs-service-title"><a href="#">Urban Gardening</a> </h3>
+								<p>
+									Fruit is their fill meat hath abundantly place meat don't stars so and which signs third second.
+								</p>
+								<a href="#" class="readMore">Read more <i class="icon icon-arrow-right"></i> </a>
+							</div>
+						</div>	
+						<!-- single service end -->
+						</pre>
+					</div>
+				</div>
+
+
+				<div class="row" id="blog_post">
+					<div class="span9">
+						<h2><strong>Blog post</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a blog post content edit the following lines:</p>
+						<pre class="brush: xml">
+					...
+
+						<!-- blog post start -->
+						<div class="single-blog-item">
+							<div class="blog-post-img">
+								<a href="blog-single.html">
+									<img src="assets/images/blog/1.jpg" alt="">
+								</a>
+								<div class="blog-date-info">
+									<label>12</label>
+									<span>Feb</span>
+								</div>
+							</div><!-- blog-post-img end -->
+							<div class="blog-meta">
+								<ul>
+									<li class="author">
+										<a href="blog-single.html">
+											<img src="assets/images/blog/author.png" alt="">
+											by <span>Jon Miller</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										   <i class="icon icon-calendar-full"></i>
+											06 jan, 2018   
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										   <i class="icon icon-tags"></i>
+										   Triming/Blog  
+										</a>
+									</li>
+									<li>
+										<a href="#">
+										   <i class="icon icon-comment"></i>
+										   23  
+										</a>
+									</li>
+								</ul>
+							</div><!-- blog-meta end -->
+							<h3 class="xs-blog-title">
+								<a href="#">
+									 World in a grain of sand and heaven in a wild flower hold  infinity in the palm hour
+								</a>
+							</h3>
+							<p>
+								After moved created likeness, air two fowl multiply under unto fill every so kind bearing, fill. 
+								Multiply good which fowl bring given living moved good fruit saying make every sixth. 
+							</p>
+							<div class="read-more-btn">
+								<a href="#" class="xs-btn sm-btn">Read More</a>
+							</div>
+						</div>	
+						<!-- blog post end -->
+						</pre>
+					</div>
+				</div>
+
+
+				<div class="row" id="counter_up">
+					<div class="span9">
+						<h2><strong>Funfact</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a blog post content edit the following lines:</p>
+						<pre class="brush: xml">
+					...
+
+						<!-- funfact start -->
+						<div class="col-sm-4 col-md-4">
+							<div class="single-funfact">
+								<i class="icon-fun_fact_1"></i>
+								<h3 class="funfact-title" data-counter="25">25</h3>
+								<p>year of experience</p>
+							</div>
+						</div>
+						<!-- funfact end -->
+						</pre>
+						<p>To add your custom counter up number just follow my instructions <code>data-counter="25"</code> to change <code>data-counter="50"</code></p>
+						<hr>
+					</div>
+				</div>
+
+				<div class="row" id="team">
+					<div class="span9">
+						<h2><strong>Team</strong> - <a href="#top">top</a></h2>
+						<p>To add or change team content edit the following lines:</p>
+						<pre class="brush: xml">
+					...
+						<!-- team -->
+						<div class="col-lg-3 col-sm-6">
+							<div class="single-team">
+								<div class="team-img">
+									<img src="assets/images/team/1.jpg" alt="">
+									<div class="team-social">
+										<a href="#"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-twitter"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
+									</div>
+								</div>
+								<h3>Mr. Jon miller</h3>
+								<p>Gardener</p>
+							</div>
+						</div>					
+						<!-- team end -->
+		
+						</pre>
+						<p>change team image and add your own image just following instructions: <code>assets/images/team/1.jpg</code> </p>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="portfolio_and_case">
+					<div class="span9">
+						<h2><strong>recent work</strong> - <a href="#top">top</a></h2>
+						<p>To add or change recent work and our project content edit the following lines:</p>
+						<pre class="brush: xml">
+						...
+							<!-- recent work start-->
+						<div class="col-lg-4 mix cat3 col-sm-6">
+							<div class="single-recent-work">
+								<img src="assets/images/recent-work/1.jpg" alt="">
+								<div class="recet-work-footer">
+									<i class="icon-Our_service_3"></i>
+									<h3>Watering</h3>
+								</div>
+							</div>
+						</div>
+						<!-- recent work end-->
+
+			
+						</pre>
+						<p>change recent work  image and add your own image just following instructions: <code>assets/images/cases-card/1.jpg</code> </p>
+						<hr />
+					</div>
+				</div>
+				
+
+				<div class="row" id="portfolio_masonry">
+					<div class="span9">
+						<h2><strong>Our project masonry element</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a portfolio masonry edit the following lines:</p>
+						<pre class="brush: xml">
+							<!-- our project start -->
+							<div class="xs-portfolio-grid-item category1 grid-item all" style="width: 370px; position: absolute; left: 0px; top: 0px;">
+								<a href="#popup_1" class="xs-single-portfolio-item xs-image-popup">
+									<img src="assets/images/our-project/1.jpg" alt="">
+									<div class="single-project-content">
+										<div class="xs-image-popup-icon">
+											<i class="icon icon-plus"></i>
+										</div>
+										<h3 class="xs-single-title">Planting</h3>
+										<p>
+											Together also created. Meat winged seas waters herb saw he. Second female void.
+										</p>
+									</div>
+								</a><!-- .xs-single-portfolio-item END -->
+								<div id="popup_1" class="container xs-gallery-popup-item mfp-hide">
+									<div class="row">
+										<div class="col-lg-5 xs-padding-0">
+											<div class="xs-popup-img">
+												<img src="assets/images/our-project/1.jpg" alt="">
+											</div>
+										</div>
+										<div class="col-lg-7">
+											<div class="xs-popup-content">
+												<h2 class="hidden-title">Project info</h2>
+												<h3>Garden Caring</h3>
+												<div class="row">
+													<div class="col-lg-5">
+														<ul class="xs-popup-left-content">
+															<li>
+																<i class="icon icon-calendar-full"></i>
+																<label>Project date</label>
+																<span>22 jan 2018</span>
+															</li>
+															<li>
+																<i class="icon icon-tags"></i>
+																<label>Category</label>
+																<span>Garden care, Garden</span>
+															</li>
+															<li>
+																<i class="icon icon-user2"></i>
+																<label>Client</label>
+																<span>Mr. Jordan, Newyork</span>
+															</li>
+															<li>
+																<i class="icon icon-invest"></i>
+																<label>Project value</label>
+																<span>$ 500</span>
+															</li>
+															<li>
+																<i class="icon icon-map-marker2"></i>
+																<label>Location</label>
+																<span>76/A, Green lawn,
+																	Newyork City
+																</span>
+															</li>
+														</ul>
+													</div>
+													<div class="col-lg-7">
+														<div class="xs-popup-right-content">
+															<p>
+																Darkness dominion dominion her body creature appear make replenish.
+																Bring shall him waters saw creepeth creepeth land divided.
+															</p>
+															<blockquote>
+																“Each which life god all living form fruitful their fowl shed a stars he
+																left”
+															</blockquote>
+															<p>
+																Fowl she'd a stars he let. Creepeth deep sixth you is signs creature.
+																Earth divide great whales.
+															</p>
+															<a href="#" class="xs-btn">PROJECT LINK</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</pre>
+						<p>change portfolio masonry image and add your own image just following instructions: <code>assets/images/our-project/gallery_1.jpg</code> </p>
+						<hr />
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="contact">
+					<div class="span9">
+						<h2><strong>Contact</strong> - <a href="#top">top</a></h2>
+						<p>To add or change a contact filed edit the following lines:</p>
+						<pre class="brush: xml">
+					...
+
+						<!-- contact form start -->
+						<div class="xs-form-group">
+							<form action="#" method="POST" id="xs-contact-form" class="xs-form">
+								<div class="row">
+									<div class="col-lg-6">
+										<input type="text" class="form-control" name="name" placeholder="Your name" id="xs_contact_name">
+									</div>
+									<div class="col-lg-6">
+										<input type="email" class="form-control" name="email" placeholder="Your email" id="xs_contact_email">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6">
+										<input type="text" class="form-control" name="phone-number" placeholder="Your phone number" id="xs_contact_phone">
+		
+									</div>
+									<div class="col-lg-6">
+										<input type="text" class="form-control" name="Subject" placeholder="Subject" id="xs_contact_subject">
+									</div>
+								</div>
+		
+								<textarea name="massage" placeholder="Message" id="x_contact_massage" class="form-control message-box" cols="30" rows="10"></textarea>
+		
+								<div class="xs-btn-wraper">
+									<input type="submit" class="xs-btn" id="xs_contact_submit" value="SEND MESSAGE">
+								</div>
+							</form>
+						</div>
+						<!-- contact form end -->
+						</pre>
+						<hr />
+					</div>
+				</div>
+
+				<div class="row" id="contact_init">
+					<div class="span9">
+						<h2><strong>Contact</strong> - <a href="#top">top</a></h2>
+						<p>The Contact form is based on jQuery. You don't have to know PHP. To change sample email adress, open <code>assets/php/c_config.php</code>, find and edit code below:</p>
+						<pre class="brush: xml">
+								...
+								<!-- put your email address here -->
+
+								define('YOUR_EMAIL_ADDRESS', 'info@example.com');
+								define('YOUR_EMAIL_SUBJECT', 'your mail subject');
+								define('YOUR_SUCCESS_MASSAGE', 'Successfully Sent Email');
+								
+						</pre>
+					</div>
+				</div>
+
+				<div class="row" id="phone_number_init">
+					<div class="span9">
+						<h2><strong>Phone number</strong> - <a href="#top">top</a></h2>
+						<p>To add or change your custom number find and edit code below:</p>
+						<pre class="brush: xml">
+							...
+							<label><i class="icon icon-phone3"></i> 000 2672 561</label>
+						</pre>
+						<p>you add your own number just follow it <code>000 2672 561</code> you fill your space and its working fine</p>
+						<hr>
+					</div>
+				</div>
+			
+				<div class="row" id="javascript">
+					<div class="span9">
+						<h2><strong>JavaScript</strong> - <a href="#top">top</a></h2>
+						<p>This theme imports the following Javascript files.</p>
+						<ul>
+							<li>assets/js/jquery-3.2.1.min.js</li>
+							<li>assets/js/bootstrap.min.js</li>
+							<li>assets/js/assets/js/jquery-mixtub.js</li>
+							<li>assets/js/jquery.magnific-popup.min.js</li>
+							<li>assets/js/owl.carousel.min.js</li>
+							<li>assets/js/isotope.js</li>
+							<li>assets/js/jquery.appear.min.js</li>
+							<li>assets/js/navigation.js</li>
+							<li>assets/js/wow.min.js</li>
+							<li>assets/js/main.js</li>
+						</ul>
+
+
+						<hr />
+					</div>
+				</div>
+
+
+				<div class="row" id="psd-file">
+					<div class="span9">
+						<h2><strong>PSD Files</strong> - <a href="#top">top</a></h2>
+						<p>The following Photoshop file are included with the download package place in /PSD/ folder: <br />
+							<strong>gardenic.psd</strong>
+						</p>
+						<hr />
+					</div>
+				</div>
+
+
+				<div class="row" id="credits">
+					<div class="span9">
+						<h2><strong>Credits</strong> - <a href="#top">top</a></h2>
+						<ul class="nav nav-list">
+							<li><a href="http://getbootstrap.com/" target="_blank"><i class="icon-angle-right"></i> Twitter Bootstrap</a></li>
+							<li><a href="http://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="icon-angle-right"></i> Font Awesome</a></li>
+							<li><a href="https://owlcarousel2.github.io/OwlCarousel2/index.html" target="_blank"><i class="icon-angle-right"></i> owl carousel</a></li>
+							<li><a href="http://jquery.com/" target="_blank"><i class="icon-angle-right"></i> jQuery</a></li>
+						</ul>
+						<hr />
+						<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the templates on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+						<p><strong>XpeedStudio</strong></p>
+						<p></p>
+						<p><a href="#top">Go To Table of Contents</a></p>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script>
+		jQuery( document ).ready( function ( $ ) {
+			$( document ).on( 'click', '.nav-tabs li a', function ( event ) {
+				event.preventDefault();
+				/* Act on the event */
+
+				var targets = $( this.getAttribute( 'href' ) );
+
+				$( 'body, html' ).animate( {
+					scrollTop: targets.offset().top
+				}, 1000 );
+			} );
+
+			$( document ).on( 'click', '.span9 a[href="#top"]', function ( event ) {
+				event.preventDefault();
+				/* Act on the event */
+
+				$( 'body, html' ).animate( {
+					scrollTop: 0
+				}, 1000 );
+			} );
+		} );
+	</script>
+</body>
+</html>
