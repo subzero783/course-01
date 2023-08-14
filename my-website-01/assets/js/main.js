@@ -24,6 +24,7 @@
     -------------------------------------------------------------------*/
 
 
+    // This is the onload event for the venue group. It's called on load
     $(window).on('load', function () {
      /*==========================================================
              prelaoder
@@ -32,8 +33,13 @@
 
 
     // preloader close
+        /**
+        * @param e
+        */
         $('.cancel-preloader').on('click', function (e) {
         e.preventDefault();
+
+        // Add the loaded class to the preloader.
         if (!($('#preloader').hasClass('loaded'))) {
             $('#preloader').addClass('loaded');
         }
