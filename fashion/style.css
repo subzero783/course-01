@@ -1,0 +1,101 @@
+#hero {
+  background-color: #c2efd4;
+}
+
+#hero #top-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 55px;
+  width: 100%;
+  max-width: 1378px;
+}
+
+#hero #top-nav .top-logo a {
+  font-family: "Rufina", serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#hero #top-nav .top-logo a:hover,
+#hero #top-nav .top-logo a:focus,
+#hero #top-nav .top-logo a:active {
+  text-decoration: unset;
+}
+
+.shop-icon-and-login-container img {
+  width: 100%;
+  max-width: 30px;
+}
+
+.shop-icon-and-login-container a {
+  margin-right: 59px;
+}
+
+.shop-icon-and-login-container a:last-of-type {
+  margin-right: 0;
+  padding: 8px 35px;
+  border: 2px solid #224f34;
+  text-transform: uppercase;
+}
+
+.shop-icon-and-login-container a:last-of-type:hover,
+.shop-icon-and-login-container a:last-of-type:focus,
+.shop-icon-and-login-container a:last-of-type:active {
+  text-decoration: unset;
+}
+
+#hero #top-nav a {
+  color: #224f34;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero #top-nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#hero #top-nav > ul > li {
+  margin-right: 57px;
+}
+
+#hero #top-nav > ul > li > a {
+  text-transform: uppercase;
+}
+
+#hero #top-nav > ul > li > a:hover,
+#hero #top-nav > ul > li > a:focus,
+#hero #top-nav > ul > li > a:active {
+  text-decoration: unset;
+}
+
+#hero #top-nav > ul > li:last-of-type {
+  margin-right: 0;
+}
+
+.hero-text-and-image {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 100%;
+  max-width: 1378px;
+}
+
+.hero-text-container {
+  color: #224f34;
+  font-family: "Rufina", serif;
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
