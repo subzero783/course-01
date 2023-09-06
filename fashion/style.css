@@ -1,3 +1,39 @@
+a {
+  transition: all 0.5s ease 0s;
+  position: relative;
+}
+/* start:link animation */
+a:not(.no-underline)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  border-radius: 5px;
+  height: 0.05em;
+  bottom: 0;
+  left: 0;
+
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+a:not(.no-underline):hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+a:not(.no-underline).light-green-line::after {
+  background: #267d49;
+}
+a:not(.no-underline).dark-green-line::after {
+  background: #224f34;
+}
+/* end:link animation */
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
 #hero {
   background-color: #c2efd4;
 }
@@ -10,7 +46,6 @@
   margin: 0 auto;
   padding-top: 55px;
   width: 100%;
-  max-width: 1378px;
 }
 
 #hero #top-nav .top-logo a {
@@ -27,26 +62,28 @@
   text-decoration: unset;
 }
 
-.shop-icon-and-login-container img {
+#hero #top-nav .shop-icon-and-login-container img {
   width: 100%;
   max-width: 30px;
 }
 
-.shop-icon-and-login-container a {
+#hero #top-nav .shop-icon-and-login-container a {
   margin-right: 59px;
 }
 
-.shop-icon-and-login-container a:last-of-type {
+#hero #top-nav .shop-icon-and-login-container a:last-of-type {
   margin-right: 0;
   padding: 8px 35px;
   border: 2px solid #224f34;
   text-transform: uppercase;
 }
 
-.shop-icon-and-login-container a:last-of-type:hover,
-.shop-icon-and-login-container a:last-of-type:focus,
-.shop-icon-and-login-container a:last-of-type:active {
+#hero #top-nav .shop-icon-and-login-container a:last-of-type:hover,
+#hero #top-nav .shop-icon-and-login-container a:last-of-type:focus,
+#hero #top-nav .shop-icon-and-login-container a:last-of-type:active {
   text-decoration: unset;
+  background-color: #224f34;
+  color: #fff;
 }
 
 #hero #top-nav a {
@@ -74,6 +111,7 @@
 #hero #top-nav > ul > li > a:focus,
 #hero #top-nav > ul > li > a:active {
   text-decoration: unset;
+  color: #267d49;
 }
 
 #hero #top-nav > ul > li:last-of-type {
@@ -86,12 +124,12 @@
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 100px 0 166px 0;
   width: 100%;
-  max-width: 1378px;
+  max-width: unset;
 }
 
-.hero-text-container {
+.hero-text-container > h1 {
   color: #224f34;
   font-family: "Rufina", serif;
   font-size: 86px;
@@ -99,3 +137,71 @@
   font-weight: 700;
   line-height: normal;
 }
+
+.hero-text-container > p {
+  color: #267d49;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 220%; /* 52.8px */
+  margin-bottom: 54px;
+}
+
+.hero-text-container > a {
+  border-radius: 3px;
+  background: #224f34;
+  box-shadow: 6px 33px 59px 0px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  display: block;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  transition: all 0.5s ease 0s;
+}
+
+.hero-text-container > a:hover,
+.hero-text-container > a:active,
+.hero-text-container > a:focus {
+  text-decoration: unset;
+  color: #224f34;
+  background: #fff;
+}
+
+.hero-image-container {
+  position: relative;
+}
+
+.hero-image-container img {
+  width: 100%;
+}
+
+.hero-image-container {
+  max-width: 570px;
+  margin: 0 auto;
+}
+
+.hero-image-container .green-dots-1,
+.hero-image-container .green-dots-2 {
+  max-width: 119px;
+  position: absolute;
+}
+
+.hero-image-container .green-dots-1 {
+  bottom: 12%;
+  left: 3%;
+}
+
+.hero-image-container .green-dots-2 {
+  top: 23%;
+  right: 3%;
+}
+
+/*  */
