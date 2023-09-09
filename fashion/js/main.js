@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
 });
 
 const Nav = document.querySelector("#top-nav-container");
-const NavTop = Nav.offsetTop + 100;
+const NavTop = Nav.offsetTop + 150;
 
 function fixnavbar() {
   if (window.scrollY >= NavTop) {
