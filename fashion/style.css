@@ -31,7 +31,6 @@ a:not(.no-underline).dark-green-line::after {
   width: 100%;
   margin: 0 auto;
   max-width: 1140px;
-  /* padding: 0 15px; */
 }
 
 #hero {
@@ -46,7 +45,6 @@ a:not(.no-underline).dark-green-line::after {
   margin: 0 auto;
   padding-top: 55px;
   width: 100%;
-  max-width: unset;
   position: relative;
 }
 
@@ -113,6 +111,7 @@ a:not(.no-underline).dark-green-line::after {
 
 #hero #top-nav > ul > li > a {
   text-transform: uppercase;
+  padding: 5px;
 }
 
 #hero #top-nav > ul > li > a:hover,
@@ -129,19 +128,23 @@ a:not(.no-underline).dark-green-line::after {
 #top-nav .burger-container {
   position: absolute;
   right: 15px;
-  top: 80px;
+  top: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0 5px;
 }
 
 #top-nav .burger {
   align-items: center;
   cursor: pointer;
   display: none;
-  justify-content: flex-end;
-  padding-right: 15px;
+  justify-content: center;
   position: relative;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   width: 100%;
   z-index: 2;
+  cursor: pointer;
 }
 
 #top-nav .burger .burger__patty {
@@ -149,7 +152,9 @@ a:not(.no-underline).dark-green-line::after {
   height: 2px;
   position: relative;
   width: 40px;
+  top: 10px;
   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
 }
 
 #top-nav .burger .burger__patty:before,
@@ -160,24 +165,40 @@ a:not(.no-underline).dark-green-line::after {
   height: 2px;
   left: 0;
   position: absolute;
-  top: 10px;
+  top: 20px;
   width: 100%;
 }
 
 #top-nav .burger .burger__patty:before {
-  top: -10px;
+  top: 10px;
 }
 
 #top-nav .burger.burger--active .burger__patty {
-  transform: rotate(90deg);
+  background-color: transparent;
 }
 
 #top-nav .burger.burger--active .burger__patty:before {
-  transform: rotate(-45deg) translate(-7px, -7px) scaleX(0.7);
+  transform: rotate(-45deg) translate(0, 0px);
 }
 
 #top-nav .burger.burger--active .burger__patty:after {
-  transform: rotate(45deg) translate(-7px, 7px) scaleX(0.7);
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+
+body.fixed-nav #hero #top-nav-container {
+  position: fixed;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10000;
+  transition: all 0.2s linear;
+}
+
+body.fixed-nav #hero #top-nav-container #top-nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -187,29 +208,61 @@ a:not(.no-underline).dark-green-line::after {
     width: 100%;
   }
   #hero #top-nav .top-logo {
-    width: 100%;
-    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+  #hero #top-nav .top-logo a {
+    font-size: 30px;
   }
   #hero #top-nav > ul {
     width: 100%;
-    display: none;
+    display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
+    overflow: hidden;
+    height: 0;
+    padding-top: 5px;
+    transition: all 0.5s ease-in-out;
   }
   #hero #top-nav > ul > li {
     margin-right: 0;
     width: 100%;
     text-align: center;
+    margin-bottom: 10px;
+  }
+  #hero #top-nav > ul > li > a {
+    padding: 5px;
+  }
+  #hero #top-nav > ul > li:last-of-type {
+    margin-bottom: 0;
   }
   #hero #top-nav .shop-icon-and-login-container {
     width: 100%;
     justify-content: center;
+    margin-top: 10px;
   }
   #top-nav .burger {
     display: flex;
   }
-  #top-nav .burger .burger__patty {
-    transform: scale(0.8);
+  #hero #top-nav > ul.active {
+    height: 140px;
+  }
+  body.fixed-nav #hero #top-nav-container #top-nav {
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  body.fixed-nav #hero #top-nav-container #top-nav .shop-icon-and-login-container {
+    height: 0;
+    overflow: hidden;
+    flex-flow: column nowrap;
+    transition: all 0.5s ease-in-out;
+  }
+  body.fixed-nav #hero #top-nav-container #top-nav .shop-icon-and-login-container.active {
+    height: 100px;
+  }
+  body.fixed-nav #hero #top-nav-container #top-nav .shop-icon-and-login-container a:first-of-type {
+    margin: -10px auto 10px;
+    display: block;
   }
 }
 
@@ -219,7 +272,7 @@ a:not(.no-underline).dark-green-line::after {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 100px 15px 166px 15px;
+  padding: 100px 15px 1000px 15px;
   width: 100%;
   max-width: unset;
 }
